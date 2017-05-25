@@ -1,0 +1,48 @@
+/*
+* @Author: Administrator
+* @Date:   2017-01-12 10:28:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-03-03 14:51:07
+*/
+
+div,p,h1,h2,h3,h4,h5,h6,a,span{
+	font: 12px  宋体;
+	text-decoration:none;
+}
+body{
+	background-color: #F6F6F6;
+}
+ul,li,ol,dl,dd,dt,body,h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+input{
+	border:0 none;
+	outline-style: none;
+}
+.fl{
+	float:left;	
+}
+.fr{
+	float:right;	
+}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;	
+}
+.clearfix{
+	zoom:1;	
+}
+img{
+	display: block;
+}
+em,i{
+	font-style:normal;	
+}
