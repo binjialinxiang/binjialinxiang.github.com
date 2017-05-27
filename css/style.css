@@ -17,7 +17,9 @@ body{color:#666; background-color:#fff;font: 12px/1.5 '微软雅黑',tahoma,aria
 	width: 1000px;
 	height: 500px;
 	position: relative;
-	margin: 150px auto;
+	margin: 0 auto;
+	top:150px;
+	left:0;
 }
 .poster-main a,.poster-main img{
 	display:block;
@@ -47,6 +49,36 @@ body{color:#666; background-color:#fff;font: 12px/1.5 '微软雅黑',tahoma,aria
 	right:0; 
 	background: url(../images/right.png) no-repeat center center;
 }
+html{
+	height: 100%;
+}
 body{
 	background: #000;
+	height: 100%;
+	overflow: hidden;
+}
+/*遮罩层send*/
+.shadow{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:black;
+	z-index: 100;
+	opacity:0.7;
+	display: none;
+}
+
+/*内容send*/
+.content{
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -400px;
+	background: red;
+	z-index: 101;
+	display: none;
 }
