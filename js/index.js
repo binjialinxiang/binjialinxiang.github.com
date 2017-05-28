@@ -1,45 +1,51 @@
+let oInt =document.querySelector('#introduce');
+let oRes =document.querySelector('#resume');
+let opho =document.querySelector('#Photo');
+let oPro =document.querySelector('#project');
+let oSki =document.querySelector('#Skill');
+
+function show (obj){
+    $(obj).addClass('animated bounceInDown').show();
+    $('#mask').show();
+}
+function hides(obj){
+    $(obj).removeClass('animated bounceInDown').hide(400);
+    $('#mask').hide();
+}
+
 // 自我介绍
 $('#li1').click(()=>{
-    $('#introduce').addClass('animated bounceInDown').show();
-    $('#mask').show();
+   show(oInt);
 });
 $('#mask').click(()=>{
-    $('#introduce').removeClass('animated bounceInDown').hide(400);
-    $('#mask').hide();
+   hides(oInt);
 });
 //个人简历
 $('#li2').click(()=>{
-    $('#resume').addClass('animated bounceInDown').show();
-    $('#mask').show();
+    show(oRes);
 });
 $('#mask').click(()=>{
-    $('#resume').removeClass('animated bounceInDown').hide(400);
-    $('#mask').hide();
+    hides(oRes);
 });
 //照片
 $('#li3').click(()=>{
-    $('#Photo').addClass('animated bounceInDown').show();
-    $('#mask').show();
+    show(opho);
 });
 $('#mask').click(()=>{
-    $('#Photo').removeClass('animated bounceInDown').hide(400);
-    $('#mask').hide();
+    hides(opho);
 });
 //项目
 $('#li4').click(()=>{
-    $('#project').addClass('animated bounceInDown').show();
-    $('#mask').show();
+    show(oPro);
 });
 $('#mask').click(()=>{
-    $('#project').removeClass('animated bounceInDown').hide(400);
-    $('#mask').hide();
+    hides(oPro);
 });
 //技能
 $('#li5').click(()=>{
-    $('#Skill').addClass('animated bounceInDown').show();
-    $('#mask').show();
+    show(oSki);
 });
 $('#mask').click(()=>{
-    $('#Skill').removeClass('animated bounceInDown').hide(400);
-    $('#mask').hide();
+    hides(oSki);
 });
+
